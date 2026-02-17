@@ -1,7 +1,7 @@
 import DomeGallery from "../components/DomeGallery";
 export default function App() {
   return (
-    <div style={{ width: "100vw", height: "100vh" }}>
+    <div style={{ width: "100vw", height: "100vh", background: "transparent" }}>
       <DomeGallery
         fit={0.8}
         minRadius={600}
@@ -9,6 +9,7 @@ export default function App() {
         segments={34}
         dragDampening={2}
         grayscale
+        padFactor={0} // Remove padding
       />
     </div>
   );
